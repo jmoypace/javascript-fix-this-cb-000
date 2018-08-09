@@ -75,3 +75,9 @@ function makeDessert() {
 function serve(message, customer) {
   return(customer + ", your " + this.name + " is ready to eat! " + message)
 }
+document.addEventListener("DOMContentLoaded", function(event) {
+  var cookLinks = document.getElementsByClassName("js-make")
+  for(var i=0; i<cookLinks.length; i++) {
+    cookLinks[i].addEventListener("click", makeDessert)
+  }
+});

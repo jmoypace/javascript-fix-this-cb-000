@@ -13,7 +13,6 @@ var cake = {
     }, 2000)
   }
 }
-
 var pie = {
   name: "Apple Pie",
   ingredients: ["apples", "flour", "eggs", "butter", "sugar"],

@@ -64,7 +64,13 @@ function cool(updateFunction) {
   updateFunction(status)
 }
 
-
+function makeDessert() {
+  if(this.parentNode.id === "cake") {
+    makeCake.call(this.parentNode)
+  } else {
+    makePie.call(this.parentNode)
+  }
+}
 
 function serve(message, customer) {
   return(customer + ", your " + this.name + " is ready to eat! " + message)
